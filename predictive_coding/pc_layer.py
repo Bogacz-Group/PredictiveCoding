@@ -16,6 +16,7 @@ class PCLayer(nn.Module):
         self,
         energy_fn: typing.Callable = lambda inputs: 0.5 *
             (inputs['mu'] - inputs['x'])**2,
+        energy_fn_kwargs: dict = {},
         sample_x_fn: typing.Callable = lambda inputs: inputs['mu'].detach(
                 ).clone(),
         S: torch.Tensor = None,
@@ -78,6 +79,8 @@ class PCLayer(nn.Module):
 
         assert callable(energy_fn)
         self._energy_fn = energy_fn
+
+        self._energy_fn_kwargs = energy_fn_kwargs
 
         self.clear_energy()
 
@@ -269,7 +272,7 @@ class PCLayer(nn.Module):
             }
             energy_fn_inputs.update(energy_fn_additional_inputs)
 
-            energy = self._energy_fn(energy_fn_inputs)
+            energy = self._energy_fn(energy_fn_inputs, **self._energy_fn_kwargs)
 
             if self._S is not None:
                 # [batch_size, size_mu, size_x]
