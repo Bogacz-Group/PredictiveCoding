@@ -936,21 +936,10 @@ class PCTrainer(object):
 
             # optimizer_p: step
             if (t in self._update_p_at) or (early_stop and self._update_p_at_early_stop):
-                if (self.inputs is not None) and (self.inputs != []):
-                    batch_size = len(self.inputs)
-                # check if loss_fn_kwargs["_target"] exists
-                elif "_target" in loss_fn_kwargs:
-                    batch_size = len(loss_fn_kwargs["_target"]) if loss_fn_kwargs["_target"] is not None else 1
-                else:
-                    batch_size = 1
                 if self._accumulate_p_at!=[]:
                     params = self.get_model_parameters()
                     for param in params:
-                        param.grad = param.grad/(len(self._accumulate_p_at)*batch_size)
-                else:
-                    params = self.get_model_parameters()
-                    for param in params:
-                        param.grad = param.grad/batch_size
+                        param.grad = param.grad/(len(self._accumulate_p_at))
                 self._optimizer_p.step()
 
             # callback_after_t
