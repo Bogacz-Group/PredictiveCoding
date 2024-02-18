@@ -43,7 +43,7 @@ class PCTrainer(object):
         energy_coefficient: float = 1.0,
         early_stop_condition: str = "False",
         update_p_at_early_stop: bool = True,
-        plot_progress_at: typing.Union[str, typing.List[int]] = "all",
+        plot_progress_at: typing.Union[str, typing.List[int]] = [],
         is_disable_warning_energy_from_different_batch_sizes: bool = False,
     ):
         """Creates a new instance of ``PCTrainer``.
