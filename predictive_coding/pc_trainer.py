@@ -38,7 +38,7 @@ class PCTrainer(object):
         manual_optimizer_p_fn: typing.Callable = None,
         T: int = 512,
         update_x_at: typing.Union[str, typing.List[int]] = "all",
-        update_p_at: typing.Union[str, typing.List[int]] = "all",
+        update_p_at: typing.Union[str, typing.List[int]] = "last",
         accumulate_p_at: typing.Union[str, typing.List[int]] = "never",
         energy_coefficient: float = 1.0,
         early_stop_condition: str = "False",
@@ -941,7 +941,6 @@ class PCTrainer(object):
                     for param in params:
                         param.grad = param.grad/(len(self._accumulate_p_at))
                 self._optimizer_p.step()
-
             # callback_after_t
             if callback_after_t is not None:
                 callback_after_t(t, **callback_after_t_kwargs)
