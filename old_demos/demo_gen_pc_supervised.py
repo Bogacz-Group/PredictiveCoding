@@ -143,10 +143,10 @@ pc_trainer = pc.PCTrainer(
     T=20,
     update_x_at='all',
     optimizer_x_fn=optim.SGD,
-    optimizer_x_kwargs={"lr": 0.01},
+    optimizer_x_kwargs={"lr": 0.1},
     update_p_at='last',
     optimizer_p_fn=optim.Adam,
-    optimizer_p_kwargs={"lr": 0.001, "weight_decay":0.1, "betas":(0.9,0.999)},
+    optimizer_p_kwargs={"lr": 0.001, "weight_decay":0.001, "betas":(0.9,0.999)},
     plot_progress_at=[],
     x_lr_discount=0.5,
 )
