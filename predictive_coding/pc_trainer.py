@@ -14,8 +14,6 @@ import torch.optim as optim
 
 from . import utils
 from . import pc_layer
-from . import pc_layer_inertia
-
 
 
 class PCTrainer(object):
@@ -413,24 +411,13 @@ class PCTrainer(object):
             if isinstance(module, pc_layer.PCLayer):
                 yield name, module
 
-    def get_model_xs(self, is_warning_x_not_initialized=True, is_return_tuple_x_v=False) -> typing.Generator[nn.Parameter, None, None]:
+    def get_model_xs(self, is_warning_x_not_initialized=True) -> typing.Generator[nn.Parameter, None, None]:
         """Retrieves xs.
         """
         for pc_layer in self.get_model_pc_layers():
-            if isinstance(pc_layer, pc_layer_inertia.PCLayerInertial):    
-                model_x = pc_layer.get_x()
-                model_v = pc_layer.get_v()
-            else:
-                model_x = pc_layer.get_x()
-                model_v = None
-            
+            model_x = pc_layer.get_x()
             if model_x is not None:
-                if is_return_tuple_x_v:
-                    yield (model_x, model_v)
-                else:
-                    yield model_x
-                    if model_v is not None:
-                        yield model_v
+                yield model_x
             else:
                 if is_warning_x_not_initialized:
                     warnings.warn(
@@ -442,29 +429,6 @@ class PCTrainer(object):
                         category=RuntimeWarning
                     )
 
-    # def get_model_xs_and_vs(self, is_warning_x_not_initialized=True)-> typing.Generator[nn.Parameter, None, None]:
-    #     for pc_layer in self.get_model_pc_layers():
-    #         # check if pc_layer is of type PCLayerInertial
-    #         if isinstance(pc_layer, pc_layer_inertia.PCLayerInertial):    
-    #             model_x = pc_layer.get_x()
-    #             model_v = pc_layer.get_v()
-    #         else:
-    #             model_x = pc_layer.get_x()
-    #             model_v = None
-    #         if model_x is not None:
-    #             yield (model_x, model_v)
-    #         else:
-    #             if is_warning_x_not_initialized:
-    #                 warnings.warn(
-    #                     (
-    #                         "While you are getting x from all pc layers (calling <pc_trainer.get_model_xs()>), "
-    #                         "some pc layers has not been initialized yet (i.e., has x being None). "
-    #                         "This potentially causes bugs. "
-    #                     ),
-    #                     category=RuntimeWarning
-    #                 )
-
-    # use for unsupervised learning only
     def get_model_representations(self):
         xs = self.get_model_xs()
         for x in xs:
