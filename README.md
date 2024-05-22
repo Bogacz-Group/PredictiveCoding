@@ -10,25 +10,18 @@ In this repository you can also find tutorials that can be run on google colab f
 - temporal predictive coding networks as propsoed in []()
 
 
-## Key Contributions
-- **Pytorch implementation**: Our Pytorch implementation of predictive coding offers a fast and efficient implementation that can eb run on CPU and GPU.
-- **Extendable framework**: Our model demonstrates how precise generative models can be learned through mechanisms that are implementable within the biological constraints of neural networks.
-- **Alignment with Experimental Observations**: MCPC not only offers theoretical contributions but also provides a compelling match to experimental data on neural variability, supporting its relevance and applicability to understanding brain function.
-
 
 ## Structure of the repository
 The repository includes:
-- `figure_2.py`, `figure_3.py`, `figure_4.py`, `figure_5.py`, `figure_6.py`, and `table_1.py` contain the code to recreate the figures and the table from our paper.
-- `requirements.txt` contains the python dependencies of this repository.
-- `figures/` contains the output figures of the code.
-- `models/` contains trained models to generate figures.
-- `utils/` contains utility functions
-- `predictive_coding/` contains the code to simulate MCPC- and PC- models.
-- `Deep_Latent_Gaussian_Models/` contains code to simulate DLGMs.
-- `ResNet.py` contains the code to simulate ResNet-9 models.
+- the predictive coding library under `predictive_coding`
+- `1_supervised_learning_pc.ipynb`, a tutorial on how to train a predictive coding model to perform classification on MNIST [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/1_supervised_learning_pc.ipynb)
+- `2_unsupervised_learning_mcpc.ipynb`, a tutorial on how to train a Monte Carlo predictive coding model on Gaussian data
+- `3_memory_rpc.ipynb`, a tutorial on how to train a recurrent predictive coding model on a memory task
+- `4_sequential_memory_tpc.ipynb`, a tutorial on how to train a temporal predictive coding model on a sequential memory task.
+
 
 ## Usage
-Follow the following steps to clone the code and setup the necessary python libraries:
+Follow the next steps to clone the code and setup the necessary python libraries:
 
 ```bash
 git clone https://github.com/gaspardol/MonteCarloPredictiveCoding.git
@@ -36,17 +29,7 @@ cd MonteCarloPredictiveCoding
 pip install -r requirements.txt
 ```
 
-To generate the figures of the paper please run
-
-```bash
-python figure_2.py
-python figure_3.py
-python figure_4.py
-python figure_5.py
-python figure_6.py
-python table_1.py
-```
-
+Each tutorial can be run on Google Colab by opening 
 ## Citation
 For those who find our work useful, here is how you can cite it:
 
