@@ -14,11 +14,10 @@ In this repository you can also find tutorials that can be run on google colab f
 ## Structure of the repository
 The repository includes:
 - the predictive coding library under `predictive_coding`
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/1_supervised_learning_pc.ipynb)`1_supervised_learning_pc.ipynb`, a tutorial on how to train a predictive coding model to perform classification on MNIST 
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/2_unsupervised_learning_mcpc.ipynb)`2_unsupervised_learning_mcpc.ipynb`, a tutorial on how to train a Monte Carlo predictive coding model on Gaussian data
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/3_memory_rpc.ipynb)
-`3_memory_rpc.ipynb`, a tutorial on how to train a recurrent predictive coding model on a memory task
-- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/4_sequential_memory_tpc.ipynb)`4_sequential_memory_tpc.ipynb`, a tutorial on how to train a temporal predictive coding model on a sequential memory task.
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/1_supervised_learning_pc.ipynb) `1_supervised_learning_pc.ipynb`, a tutorial on how to train a predictive coding model to perform classification on MNIST 
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/2_unsupervised_learning_mcpc.ipynb) `2_unsupervised_learning_mcpc.ipynb`, a tutorial on how to train a Monte Carlo predictive coding model on Gaussian data
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/3_memory_rpc.ipynb) `3_memory_rpc.ipynb`, a tutorial on how to train a recurrent predictive coding model on a memory task
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/4_sequential_memory_tpc.ipynb) `4_sequential_memory_tpc.ipynb`, a tutorial on how to train a temporal predictive coding model on a sequential memory task.
 
 
 ## Usage
@@ -30,7 +29,7 @@ cd PredictiveCoding
 pip install -r requirements.txt
 ```
 
-## Citation
+<!-- ## Citation
 For those who find our work useful, here is how you can cite it:
 
 ```bibtex
@@ -45,7 +44,7 @@ For those who find our work useful, here is how you can cite it:
 	journal = {}
 }
 
-```
+``` -->
 
 ## Contact
 For any inquiries or questions regarding the project, please feel free to contact us at gaspard.oliviers@pmb.ox.ac.uk or mufeng.tang@ndcn.ox.ac.uk.
