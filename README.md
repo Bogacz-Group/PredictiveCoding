@@ -5,9 +5,9 @@ This repository houses the implementation of [predictive coding](https://www.sci
 
 In this repository you can also find tutorials that can be run on google colab for:
 - [predictive coding models for supervised learning](https://pubmed.ncbi.nlm.nih.gov/28333583/)
-- [Monte Carlo predictive coding models](https://www.biorxiv.org/content/10.1101/2024.02.29.581455v1.full)
+- [Monte Carlo predictive coding models](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012532)
 - [recurrent predictive coding models](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010719#:~:text=The%20recurrent%2C%20single%2Dlayer%20network,instead%20of%20the%20signal%20itself.)
-- [temporal predictive coding models](https://arxiv.org/abs/2305.11982)
+- [temporal predictive coding models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/8a8b9c7f979e8819a7986b3ef825c08a-Abstract-Conference.html)
 
 
 
