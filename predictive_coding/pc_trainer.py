@@ -728,14 +728,23 @@ class PCTrainer(object):
 
             # forward
             if unwrap_with == "":
-                outputs = self._model(self.inputs).clone()
+                outputs = self._model(self.inputs)
             elif unwrap_with == "*":
-                outputs = self._model(*self.inputs).clone()
+                outputs = self._model(*self.inputs)
             elif unwrap_with == "**":
-                outputs = self._model(**self.inputs).clone()
+                outputs = self._model(**self.inputs)
             else:
                 raise NotImplementedError
 
+            # unpack outputs
+            # if outputs is a tensor
+            if isinstance(outputs, torch.Tensor):
+                outputs = outputs.clone()
+            elif isinstance(outputs, (list, tuple)):
+                outputs = [output.clone() for output in outputs]
+            else:
+                raise NotImplementedError
+            
             # at_batch_start
             if t == 0:
                 if is_model_has_pc_layers:

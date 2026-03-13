@@ -18,6 +18,7 @@ The repository includes:
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/2_unsupervised_learning_mcpc.ipynb) `2_unsupervised_learning_mcpc.ipynb`, a tutorial on how to train a Monte Carlo predictive coding model on Gaussian data
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/3_memory_rpc.ipynb) `3_memory_rpc.ipynb`, a tutorial on how to train a recurrent predictive coding model on a memory task
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/4_sequential_memory_tpc.ipynb) `4_sequential_memory_tpc.ipynb`, a tutorial on how to train a temporal predictive coding model on a sequential memory task.
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/5_bidirectional_pc.ipynb) `5_bidirectional_pc.ipynb`, a tutorial on how to train a bidirectional predictive coding model.
 
 
 ## Usage
