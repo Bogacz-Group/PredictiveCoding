@@ -4,3 +4,4 @@ data/*
 0ld*
 ~*
 .gitignore*
+.github/*
