@@ -4,11 +4,11 @@
 This repository houses the implementation of [predictive coding](https://www.sciencedirect.com/science/article/pii/S0022249615000759) used in the [Bogacz Group](https://www.mrcbndu.ox.ac.uk/groups/bogacz-group). It offers an easy and opensource access to implementing a range of predictive coding networks.
 
 In this repository you can also find tutorials that can be run on google colab for:
-- [predictive coding models for supervised learning](https://pubmed.ncbi.nlm.nih.gov/28333583/)
-- [Monte Carlo predictive coding models](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012532)
-- [recurrent predictive coding models](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010719#:~:text=The%20recurrent%2C%20single%2Dlayer%20network,instead%20of%20the%20signal%20itself.)
-- [temporal predictive coding models](https://proceedings.neurips.cc/paper_files/paper/2023/hash/8a8b9c7f979e8819a7986b3ef825c08a-Abstract-Conference.html)
-
+- [predictive coding for supervised learning](https://pubmed.ncbi.nlm.nih.gov/28333583/)
+- [Monte Carlo predictive coding](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012532)
+- [recurrent predictive coding](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010719#:~:text=The%20recurrent%2C%20single%2Dlayer%20network,instead%20of%20the%20signal%20itself.)
+- [temporal predictive coding](https://proceedings.neurips.cc/paper_files/paper/2023/hash/8a8b9c7f979e8819a7986b3ef825c08a-Abstract-Conference.html)
+- [bidirectional predictive coding](https://iclr.cc/virtual/2026/poster/10010378).
 
 
 ## Structure of the repository
