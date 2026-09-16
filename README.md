@@ -14,6 +14,7 @@ In this repository you can also find tutorials that can be run on google colab f
 ## Structure of the repository
 The repository includes:
 - the predictive coding library under `predictive_coding`
+- [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/0_intro_to_the_library.ipynb) `0_intro_to_the_library.ipynb`, an introduction to the predictive coding library.
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/1_supervised_learning_pc.ipynb) `1_supervised_learning_pc.ipynb`, a tutorial on how to train a predictive coding model to perform classification on MNIST 
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/2_unsupervised_learning_mcpc.ipynb) `2_unsupervised_learning_mcpc.ipynb`, a tutorial on how to train a Monte Carlo predictive coding model on Gaussian data
 - [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Bogacz-Group/PredictiveCoding/blob/main/3_memory_rpc.ipynb) `3_memory_rpc.ipynb`, a tutorial on how to train a recurrent predictive coding model on a memory task
